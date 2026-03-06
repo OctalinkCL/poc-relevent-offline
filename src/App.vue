@@ -1,7 +1,9 @@
 <template>
   <v-app id="inspire">
-    <v-app-bar>
+    <v-app-bar color="deep-orange-darken-1" flat>
       <v-app-bar-title>Control Evento</v-app-bar-title>
+      <v-btn icon="mdi-home-outline" @click="$router.push('/')"></v-btn>
+      <v-btn icon="mdi-cog-outline" @click="$router.push('/admin')"></v-btn>
     </v-app-bar>
 
     <v-main>
