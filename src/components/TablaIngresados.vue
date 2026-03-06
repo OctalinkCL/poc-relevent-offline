@@ -1,13 +1,25 @@
 <template>
+  <v-text-field
+    v-model="busqueda"
+    placeholder="Buscar por nombre o RUT..."
+    prepend-inner-icon="mdi-magnify"
+    clearable
+    hide-details
+    density="compact"
+    class="ma-2"
+  />
   <v-data-table
     :headers="headers"
     :items="itemsFormateados"
     :items-per-page="20"
+    :search="busqueda"
   />
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
+
+const busqueda = ref('')
 
 const props = defineProps({
   items: {
