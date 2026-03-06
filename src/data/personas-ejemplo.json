@@ -1,0 +1,12 @@
+[
+  { "rut": "12345678-9", "nombre": "Ana García López" },
+  { "rut": "9876543-2", "nombre": "Carlos Martínez Rojas" },
+  { "rut": "15234567-K", "nombre": "Valentina Torres Soto" },
+  { "rut": "11223344-5", "nombre": "Felipe Hernández Vega" },
+  { "rut": "8765432-1", "nombre": "Daniela Muñoz Fuentes" },
+  { "rut": "13456789-0", "nombre": "Rodrigo Pérez Castro" },
+  { "rut": "16789012-3", "nombre": "Javiera Ramírez Díaz" },
+  { "rut": "10111213-4", "nombre": "Sebastián Flores Morales" },
+  { "rut": "14567890-6", "nombre": "Camila Sánchez Reyes" },
+  { "rut": "7654321-8", "nombre": "Ignacio Vargas Pinto" }
+]
