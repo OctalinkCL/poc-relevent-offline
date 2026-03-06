@@ -6,12 +6,18 @@
 
   <v-tabs-window v-model="tab">
     <v-tabs-window-item value="pendientes">
-      <TablaPendientes :items="pendientes" />
+      <TablaPendientes :items="pendientes" @select="personaSeleccionada = $event" />
     </v-tabs-window-item>
     <v-tabs-window-item value="ingresados">
       <TablaIngresados :items="ingresados" />
     </v-tabs-window-item>
   </v-tabs-window>
+
+  <DialogIngreso
+    :persona="personaSeleccionada"
+    @close="personaSeleccionada = null"
+    @ingresado="onIngresado"
+  />
 </template>
 
 <script setup>
@@ -19,15 +25,22 @@ import { ref, computed, onMounted } from 'vue'
 import { db } from '@/db.js'
 import TablaPendientes from '@/components/TablaPendientes.vue'
 import TablaIngresados from '@/components/TablaIngresados.vue'
+import DialogIngreso from '@/components/DialogIngreso.vue'
 
 const tab = ref('pendientes')
 const personas = ref([])
 const registros = ref([])
+const personaSeleccionada = ref(null)
 
 onMounted(async () => {
   personas.value = await db.personas.toArray()
   registros.value = await db.registros.toArray()
 })
+
+async function onIngresado() {
+  registros.value = await db.registros.toArray()
+  personaSeleccionada.value = null
+}
 
 const pendientes = computed(() => {
   const rutsIngresados = new Set(registros.value.map((r) => r.rut))

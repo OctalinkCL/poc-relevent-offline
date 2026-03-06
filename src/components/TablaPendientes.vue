@@ -3,6 +3,8 @@
     :headers="headers"
     :items="items"
     :items-per-page="20"
+    style="cursor: pointer"
+    @click:row="(_, { item }) => emit('select', item)"
   />
 </template>
 
@@ -13,6 +15,8 @@ defineProps({
     required: true,
   },
 })
+
+const emit = defineEmits(['select'])
 
 const headers = [
   { title: 'Nombre', key: 'nombre' },
