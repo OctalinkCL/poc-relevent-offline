@@ -1,6 +1,15 @@
 <template>
-  <v-dialog :model-value="persona !== null" max-width="400" @update:model-value="!$event && emit('close')">
-    <v-card v-if="persona">
+  <v-dialog :model-value="persona !== null || rutNoEncontrado !== null" max-width="400" @update:model-value="!$event && emit('close')">
+    <v-card v-if="rutNoEncontrado">
+      <v-card-title class="d-flex justify-space-between align-center">
+        Persona no encontrada
+        <v-btn icon="mdi-close" variant="text" @click="emit('close')" />
+      </v-card-title>
+      <v-card-text>
+        El RUT <strong>{{ rutNoEncontrado }}</strong> no existe en la lista.
+      </v-card-text>
+    </v-card>
+    <v-card v-else-if="persona">
       <v-card-title class="d-flex justify-space-between align-center">
         Registrar ingreso
         <v-btn icon="mdi-close" variant="text" @click="emit('close')" />
@@ -24,6 +33,10 @@ import { db } from '@/db.js'
 const props = defineProps({
   persona: {
     type: Object,
+    default: null,
+  },
+  rutNoEncontrado: {
+    type: String,
     default: null,
   },
 })

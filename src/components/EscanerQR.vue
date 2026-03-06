@@ -6,7 +6,7 @@
 import { onMounted, onUnmounted } from 'vue'
 import { Html5Qrcode } from 'html5-qrcode'
 
-const emit = defineEmits(['close'])
+const emit = defineEmits(['scanned'])
 let scanner = null
 
 onMounted(() => {
@@ -16,7 +16,7 @@ onMounted(() => {
     { fps: 10, qrbox: 250 },
     (decodedText) => {
       console.debug('[QR]', decodedText)
-      scanner.stop().then(() => emit('close'))
+      scanner.stop().then(() => emit('scanned', decodedText))
     },
     undefined
   )

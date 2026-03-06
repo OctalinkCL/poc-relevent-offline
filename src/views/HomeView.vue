@@ -15,7 +15,8 @@
 
   <DialogIngreso
     :persona="personaSeleccionada"
-    @close="personaSeleccionada = null"
+    :rut-no-encontrado="rutNoEncontrado"
+    @close="personaSeleccionada = null; rutNoEncontrado = null"
     @ingresado="onIngresado"
   />
 
@@ -30,7 +31,7 @@
   <!-- Dialog con escáner -->
   <v-dialog v-model="scannerAbierto" max-width="400">
     <v-card>
-      <EscanerQR @close="scannerAbierto = false" />
+      <EscanerQR @scanned="onQrScanned" />
     </v-card>
   </v-dialog>
 </template>
@@ -48,11 +49,28 @@ const scannerAbierto = ref(false)
 const personas = ref([])
 const registros = ref([])
 const personaSeleccionada = ref(null)
+const rutNoEncontrado = ref(null)
 
 onMounted(async () => {
   personas.value = await db.personas.toArray()
   registros.value = await db.registros.toArray()
 })
+
+function onQrScanned(decodedText) {
+  scannerAbierto.value = false
+  let rut = null
+  try {
+    rut = new URL(decodedText).searchParams.get('RUN')
+  } catch {
+    rut = decodedText
+  }
+  const persona = personas.value.find((p) => p.rut === rut)
+  if (persona) {
+    personaSeleccionada.value = persona
+  } else {
+    rutNoEncontrado.value = rut ?? decodedText
+  }
+}
 
 async function onIngresado() {
   registros.value = await db.registros.toArray()
