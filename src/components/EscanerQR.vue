@@ -1,28 +1,23 @@
 <template>
-  <div id="qr-reader" style="width:100%" />
+  <QrcodeStream
+    :constraints="{ facingMode: 'environment' }"
+    @detect="onDetect"
+    @error="onError"
+  />
 </template>
 
 <script setup>
-import { onMounted, onUnmounted } from 'vue'
-import { Html5Qrcode } from 'html5-qrcode'
+import { QrcodeStream } from "vue-qrcode-reader";
 
-const emit = defineEmits(['scanned'])
-let scanner = null
+const emit = defineEmits(["scanned"]);
 
-onMounted(() => {
-  scanner = new Html5Qrcode('qr-reader')
-  scanner.start(
-    { facingMode: 'environment' },
-    { fps: 10, qrbox: 250 },
-    (decodedText) => {
-      console.debug('[QR]', decodedText)
-      scanner.stop().then(() => emit('scanned', decodedText))
-    },
-    undefined
-  )
-})
+function onDetect(detections) {
+  if (detections.length > 0) {
+    emit("scanned", detections[0].rawValue);
+  }
+}
 
-onUnmounted(() => {
-  if (scanner?.isScanning) scanner.stop()
-})
+function onError(err) {
+  console.error("QR scanner error:", err);
+}
 </script>
