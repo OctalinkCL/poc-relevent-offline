@@ -19,7 +19,7 @@ export default defineConfig({
         name: "Relevent Offline",
         short_name: "Relevent",
         description: "Control de ingreso offline",
-        theme_color: "#1976D2",
+        theme_color: "#F4511E",
         background_color: "#ffffff",
         display: "standalone",
         start_url: "/",
