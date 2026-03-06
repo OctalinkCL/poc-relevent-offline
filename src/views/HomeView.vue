@@ -18,6 +18,21 @@
     @close="personaSeleccionada = null"
     @ingresado="onIngresado"
   />
+
+  <!-- FAB -->
+  <v-btn
+    icon="mdi-qrcode-scan"
+    color="primary"
+    style="position:fixed; bottom:24px; right:24px; z-index:100"
+    @click="scannerAbierto = true"
+  />
+
+  <!-- Dialog con escáner -->
+  <v-dialog v-model="scannerAbierto" max-width="400">
+    <v-card>
+      <EscanerQR @close="scannerAbierto = false" />
+    </v-card>
+  </v-dialog>
 </template>
 
 <script setup>
@@ -26,8 +41,10 @@ import { db } from '@/db.js'
 import TablaPendientes from '@/components/TablaPendientes.vue'
 import TablaIngresados from '@/components/TablaIngresados.vue'
 import DialogIngreso from '@/components/DialogIngreso.vue'
+import EscanerQR from '@/components/EscanerQR.vue'
 
 const tab = ref('pendientes')
+const scannerAbierto = ref(false)
 const personas = ref([])
 const registros = ref([])
 const personaSeleccionada = ref(null)
