@@ -1,13 +1,11 @@
-<script setup>
-import { RouterView } from 'vue-router'
-</script>
-
 <template>
-  <v-app>
-    <v-btn>
-      Button
-    </v-btn>
-    <h1 class="text-h1">Home</h1>
-    <RouterView />
+  <v-app id="inspire">
+    <v-app-bar>
+      <v-app-bar-title>Control Evento</v-app-bar-title>
+    </v-app-bar>
+
+    <v-main>
+      <RouterView />
+    </v-main>
   </v-app>
 </template>
