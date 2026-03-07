@@ -1,6 +1,9 @@
 <template>
   <v-app id="inspire">
+    <!-- only on iOS -->
     <v-app-bar density="compact" color="deep-orange-darken-1" flat v-if="isIos && isStandalone" />
+
+    <!-- layoutBar -->
     <v-app-bar color="deep-orange-darken-1" flat>
       <v-app-bar-title>Control Evento</v-app-bar-title>
       <v-btn icon="mdi-home-outline" @click="$router.push('/')"></v-btn>

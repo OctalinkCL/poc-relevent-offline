@@ -1,9 +1,6 @@
 <template>
-  <QrcodeStream
-    :constraints="{ facingMode: 'environment' }"
-    @detect="onDetect"
-    @error="onError"
-  />
+  <QrcodeStream :constraints="{ facingMode: 'environment' }" @detect="onDetect" @error="onError"
+    style="height: 300px;" />
 </template>
 
 <script setup>

@@ -1,8 +1,12 @@
 <template>
-  <v-tabs v-model="tab">
-    <v-tab value="pendientes">Pendientes ({{ pendientes.length }})</v-tab>
-    <v-tab value="ingresados">Ingresados ({{ ingresados.length }})</v-tab>
-  </v-tabs>
+  <v-app-bar density="compact" color="deep-orange-darken-3" flat>
+    <v-tabs v-model="tab" fixed-tabs class="w-100" slider-color="black">
+      <v-tab value="pendientes">Pendientes ({{ pendientes.length }})</v-tab>
+      <v-tab value="ingresados">Ingresados ({{ ingresados.length }})</v-tab>
+    </v-tabs>
+  </v-app-bar>
+
+
 
   <v-tabs-window v-model="tab">
     <v-tabs-window-item value="pendientes">
@@ -13,24 +17,16 @@
     </v-tabs-window-item>
   </v-tabs-window>
 
-  <DialogIngreso
-    :persona="personaSeleccionada"
-    :rut-no-encontrado="rutNoEncontrado"
-    @close="personaSeleccionada = null; rutNoEncontrado = null"
-    @ingresado="onIngresado"
-  />
+  <DialogIngreso :persona="personaSeleccionada" :rut-no-encontrado="rutNoEncontrado"
+    @close="personaSeleccionada = null; rutNoEncontrado = null" @ingresado="onIngresado" />
 
   <!-- FAB -->
-  <v-btn
-    icon="mdi-qrcode-scan"
-    color="primary"
-    style="position:fixed; bottom:24px; right:24px; z-index:100"
-    @click="scannerAbierto = true"
-  />
+  <v-btn icon="mdi-qrcode-scan" color="primary" style="position:fixed; bottom:24px; right:24px; z-index:100"
+    @click="scannerAbierto = true" />
 
   <!-- Dialog con escáner -->
   <v-dialog v-model="scannerAbierto" max-width="400">
-    <v-card>
+    <v-card style="height: 300px;">
       <EscanerQR @scanned="onQrScanned" />
     </v-card>
   </v-dialog>
