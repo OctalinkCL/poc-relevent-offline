@@ -27,8 +27,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { db } from '@/db.js'
+import { useRegistro } from '@/composables/useRegistro.js'
 
 const props = defineProps({
   persona: {
@@ -43,17 +42,10 @@ const props = defineProps({
 
 const emit = defineEmits(['close', 'ingresado'])
 
-const loading = ref(false)
+const { loading, registrar: _registrar } = useRegistro()
 
 async function registrar(conKit) {
-  loading.value = true
-  await db.registros.add({
-    rut: props.persona.rut,
-    timestamp: Date.now(),
-    dispositivo: 'manual',
-    kit: conKit,
-  })
-  loading.value = false
+  await _registrar(props.persona, conKit, 'manual')
   emit('ingresado')
 }
 </script>

@@ -1,21 +1,10 @@
 <template>
-  <v-text-field
-    v-model="busqueda"
-    placeholder="Buscar por nombre o RUT..."
-    prepend-inner-icon="mdi-magnify"
-    clearable
-    hide-details
-    density="compact"
-    class="ma-2"
-  />
-  <v-data-table
-    :headers="headers"
-    :items="items"
-    :items-per-page="20"
-    :search="busqueda"
-    style="cursor: pointer"
-    @click:row="(_, { item }) => emit('select', item)"
-  />
+  <v-container>
+    <v-text-field v-model="busqueda" placeholder="Buscar por nombre o RUT..." prepend-inner-icon="mdi-magnify" clearable
+      hide-details density="compact" variant="outlined" flat autocomplete="off" />
+    <v-data-table :headers="headers" :items="items" :items-per-page="500" :search="busqueda" style="cursor: pointer"
+      @click:row="(_, { item }) => emit('select', item)" hide-default-footer />
+  </v-container>
 </template>
 
 <script setup>
