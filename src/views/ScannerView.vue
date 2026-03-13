@@ -54,7 +54,6 @@ const personaEncontrada = ref(null)
 const rutNoEncontrado = ref(null)
 const loading = ref(false)
 
-const ocupado = computed(() => personaEncontrada.value !== null || rutNoEncontrado.value !== null)
 const ingresados = computed(() => {
   const rutsIngresados = new Set(registros.value.map((r) => r.rut))
   return personas.value.filter((p) => rutsIngresados.has(p.rut)).length
@@ -66,7 +65,8 @@ onMounted(async () => {
 })
 
 function onQrScanned(rawValue) {
-  if (ocupado.value) return
+  personaEncontrada.value = null
+  rutNoEncontrado.value = null
   let rut = null
   try {
     rut = new URL(rawValue).searchParams.get('RUN')
