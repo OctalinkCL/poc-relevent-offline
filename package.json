@@ -15,6 +15,7 @@
     "@fontsource-variable/roboto": "^5.2.10",
     "@mdi/font": "^7.4.47",
     "dexie": "^4.3.0",
+    "firebase": "^12.10.0",
     "pinia": "^3.0.4",
     "vue": "^3.5.29",
     "vue-qrcode-reader": "^5.7.3",

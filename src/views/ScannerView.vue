@@ -46,13 +46,15 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import { db } from '@/db.js'
+import { useRegistro } from '@/composables/useRegistro.js'
 import EscanerQR from '@/components/EscanerQR.vue'
 
 const personas = ref([])
 const registros = ref([])
 const personaEncontrada = ref(null)
 const rutNoEncontrado = ref(null)
-const loading = ref(false)
+
+const { loading, registrar: _registrar } = useRegistro()
 
 const ingresados = computed(() => {
   const rutsIngresados = new Set(registros.value.map((r) => r.rut))
@@ -82,15 +84,8 @@ function onQrScanned(rawValue) {
 }
 
 async function registrar(conKit) {
-  loading.value = true
-  await db.registros.add({
-    rut: personaEncontrada.value.rut,
-    timestamp: Date.now(),
-    dispositivo: 'scanner',
-    kit: conKit,
-  })
+  await _registrar(personaEncontrada.value, conKit, 'scanner')
   registros.value = await db.registros.toArray()
   personaEncontrada.value = null
-  loading.value = false
 }
 </script>

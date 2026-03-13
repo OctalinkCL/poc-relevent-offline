@@ -8,6 +8,7 @@
       <v-app-bar-title>Control Evento</v-app-bar-title>
       <v-btn icon="mdi-format-list-bulleted" @click="$router.push('/')"></v-btn>
       <v-btn icon="mdi-qrcode-scan" @click="$router.push('/scanner')"></v-btn>
+      <v-btn icon="mdi-monitor-eye" @click="$router.push('/monitor')"></v-btn>
       <v-btn icon="mdi-cog-outline" @click="$router.push('/admin')"></v-btn>
     </v-app-bar>
 
