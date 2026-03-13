@@ -6,7 +6,8 @@
     <!-- layoutBar -->
     <v-app-bar color="deep-orange-darken-1" flat>
       <v-app-bar-title>Control Evento</v-app-bar-title>
-      <v-btn icon="mdi-home-outline" @click="$router.push('/')"></v-btn>
+      <v-btn icon="mdi-format-list-bulleted" @click="$router.push('/')"></v-btn>
+      <v-btn icon="mdi-qrcode-scan" @click="$router.push('/scanner')"></v-btn>
       <v-btn icon="mdi-cog-outline" @click="$router.push('/admin')"></v-btn>
     </v-app-bar>
 

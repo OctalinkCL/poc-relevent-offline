@@ -1,8 +1,4 @@
 <template>
-  <v-app-bar density="compact" color="deep-orange-darken-3" flat>
-    <v-app-bar-title>Control de Acceso</v-app-bar-title>
-  </v-app-bar>
-
   <!-- Cámara QR permanente -->
   <EscanerQR @scanned="onQrScanned" style="width: 100%; height: 45vh;" />
 
