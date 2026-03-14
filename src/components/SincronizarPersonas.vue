@@ -54,7 +54,7 @@
 import { ref, onMounted } from 'vue'
 import { db } from '@/db.js'
 import { storage } from '@/firebase.js'
-import { ref as storageRef, uploadBytes, getDownloadURL } from 'firebase/storage'
+import { ref as storageRef, uploadBytes, getBytes } from 'firebase/storage'
 import personasEjemplo from '@/data/personas-ejemplo.json'
 
 const archivo = ref(null)
@@ -103,9 +103,8 @@ async function sincronizar() {
   sincronizando.value = true
   mensajeSync.value = ''
   try {
-    const url = await getDownloadURL(personasRef)
-    const res = await fetch(url)
-    const personas = await res.json()
+    const bytes = await getBytes(personasRef)
+    const personas = JSON.parse(new TextDecoder().decode(bytes))
     await db.personas.bulkPut(personas)
     const count = await db.personas.count()
     estadoLocal.value = { tipo: 'success', mensaje: `${count} personas cargadas localmente` }
