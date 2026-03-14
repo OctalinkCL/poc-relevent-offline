@@ -18,7 +18,7 @@ async function descargarCSV() {
       r.id,
       r.rut,
       persona.nombre ?? "",
-      r.timestamp ? new Date(r.timestamp).toISOString() : "",
+      r.timestamp ? new Date(r.timestamp).toLocaleString('es-CL', { dateStyle: 'short', timeStyle: 'medium' }) : "",
       r.dispositivo ?? "",
       r.kit ? "sí" : "no",
     ];

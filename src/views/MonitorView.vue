@@ -48,7 +48,6 @@ const registrosRef = dbRef(database, 'registros')
 onMounted(() => {
   window.addEventListener('online', () => { online.value = true })
   window.addEventListener('offline', () => { online.value = false })
-
   onValue(registrosRef, (snap) => {
     const data = snap.val() ?? {}
     registros.value = Object.entries(data)
