@@ -1,6 +1,6 @@
 <template>
   <h1>Admin</h1>
-  <InicializarBD />
+  <SincronizarPersonas />
 
   <v-divider class="my-4" />
 
@@ -14,7 +14,7 @@
 
 <script setup>
 import { db } from "@/db.js";
-import InicializarBD from "@/components/InicializarBD.vue";
+import SincronizarPersonas from "@/components/SincronizarPersonas.vue";
 import DescargarCSV from "@/components/DescargarCSV.vue";
 
 async function resetearBD() {

@@ -1,6 +1,6 @@
 <template>
-  <!-- KPI -->
-  <div class="d-flex justify-center align-center py-3 bg-grey-lighten-3 gap-4">
+  <!-- KPI + controles -->
+  <div class="d-flex justify-center align-center py-3 bg-grey-lighten-3 gap-3 flex-wrap">
     <v-chip color="deep-orange-darken-3" variant="flat" size="large">
       <strong>{{ registros.length }} ingresados</strong>
     </v-chip>
@@ -8,6 +8,18 @@
       <v-icon start :icon="online ? 'mdi-wifi' : 'mdi-wifi-off'" />
       {{ online ? 'En línea' : 'Sin conexión' }}
     </v-chip>
+    <v-btn
+      size="small"
+      variant="tonal"
+      prepend-icon="mdi-refresh"
+      :loading="cargando"
+      @click="cargar"
+    >
+      Actualizar
+    </v-btn>
+    <span v-if="ultimaActualizacion" class="text-caption text-grey">
+      {{ ultimaActualizacion }}
+    </span>
   </div>
 
   <!-- Tabla -->
@@ -21,7 +33,12 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-if="registros.length === 0">
+      <tr v-if="cargando && registros.length === 0">
+        <td colspan="4" class="text-center py-6">
+          <v-progress-circular indeterminate size="24" />
+        </td>
+      </tr>
+      <tr v-else-if="registros.length === 0">
         <td colspan="4" class="text-center text-grey py-6">Sin registros aún</td>
       </tr>
       <tr v-for="r in registros" :key="r.id">
@@ -37,29 +54,36 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted } from 'vue'
 import { database } from '@/firebase.js'
-import { ref as dbRef, onValue, off } from 'firebase/database'
+import { ref as dbRef, get } from 'firebase/database'
 
 const registros = ref([])
 const online = ref(navigator.onLine)
-const registrosRef = dbRef(database, 'registros')
+const cargando = ref(false)
+const ultimaActualizacion = ref('')
 
 onMounted(() => {
   window.addEventListener('online', () => { online.value = true })
   window.addEventListener('offline', () => { online.value = false })
+  cargar()
+})
 
-  onValue(registrosRef, (snap) => {
+async function cargar() {
+  cargando.value = true
+  try {
+    const snap = await get(dbRef(database, 'registros'))
     const data = snap.val() ?? {}
     registros.value = Object.entries(data)
       .map(([id, v]) => ({ id, ...v }))
       .sort((a, b) => b.timestamp - a.timestamp)
-  })
-})
-
-onUnmounted(() => {
-  off(registrosRef)
-})
+    ultimaActualizacion.value = `Actualizado: ${new Date().toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit', second: '2-digit' })}`
+  } catch {
+    ultimaActualizacion.value = 'Error al cargar'
+  } finally {
+    cargando.value = false
+  }
+}
 
 function formatHora(ts) {
   return new Date(ts).toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
