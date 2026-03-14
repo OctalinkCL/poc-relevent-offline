@@ -1,13 +1,1002 @@
 [
-  { "rut": "12345678-9", "nombre": "Ana García López" },
-  { "rut": "9876543-2", "nombre": "Carlos Martínez Rojas" },
-  { "rut": "15234567-K", "nombre": "Valentina Torres Soto" },
-  { "rut": "11223344-5", "nombre": "Felipe Hernández Vega" },
-  { "rut": "8765432-1", "nombre": "Daniela Muñoz Fuentes" },
-  { "rut": "13456789-0", "nombre": "Rodrigo Pérez Castro" },
-  { "rut": "16789012-3", "nombre": "Javiera Ramírez Díaz" },
-  { "rut": "10111213-4", "nombre": "Sebastián Flores Morales" },
-  { "rut": "14567890-6", "nombre": "Camila Sánchez Reyes" },
-  { "rut": "7654321-8", "nombre": "Ignacio Vargas Pinto" },
-  { "rut": "16155479-0", "nombre": "Juan Andres Maurelia" }
+  {
+    "rut": "10023451-7",
+    "nombre": "Carlos González Rodríguez"
+  },
+  {
+    "rut": "10045678-3",
+    "nombre": "María Pérez Soto"
+  },
+  {
+    "rut": "10067890-1",
+    "nombre": "Luis Fernández Castro"
+  },
+  {
+    "rut": "10089234-5",
+    "nombre": "Ana Silva Vargas"
+  },
+  {
+    "rut": "10112345-9",
+    "nombre": "Francisco Muñoz Rojas"
+  },
+  {
+    "rut": "10134567-2",
+    "nombre": "Paula Martínez García"
+  },
+  {
+    "rut": "10156789-6",
+    "nombre": "José Reyes Díaz"
+  },
+  {
+    "rut": "10178901-4",
+    "nombre": "Sandra Torres Herrera"
+  },
+  {
+    "rut": "10201234-8",
+    "nombre": "Pedro Flores Espinoza"
+  },
+  {
+    "rut": "10223456-K",
+    "nombre": "Claudia Morales Campos"
+  },
+  {
+    "rut": "10245678-1",
+    "nombre": "Andrés Vásquez Guzmán"
+  },
+  {
+    "rut": "10267890-5",
+    "nombre": "Carolina Ortiz Navarro"
+  },
+  {
+    "rut": "10289012-3",
+    "nombre": "Ricardo Núñez Fuentes"
+  },
+  {
+    "rut": "10312345-7",
+    "nombre": "Verónica Miranda Pizarro"
+  },
+  {
+    "rut": "10334567-0",
+    "nombre": "Roberto Valenzuela Aguilera"
+  },
+  {
+    "rut": "10356789-4",
+    "nombre": "Patricia Ríos Cortés"
+  },
+  {
+    "rut": "10378901-2",
+    "nombre": "Pablo Mendoza Sandoval"
+  },
+  {
+    "rut": "10401234-6",
+    "nombre": "Isabel Vega Jiménez"
+  },
+  {
+    "rut": "10423456-9",
+    "nombre": "Rodrigo Hidalgo Medina"
+  },
+  {
+    "rut": "10445678-K",
+    "nombre": "Carmen Ramos Carrasco"
+  },
+  {
+    "rut": "10467890-8",
+    "nombre": "Diego Molina Araya"
+  },
+  {
+    "rut": "10489012-1",
+    "nombre": "Rosa Bravo Ojeda"
+  },
+  {
+    "rut": "10512345-5",
+    "nombre": "Felipe Cabrera Salinas"
+  },
+  {
+    "rut": "10534567-9",
+    "nombre": "Elena Tapia Ruiz"
+  },
+  {
+    "rut": "10556789-3",
+    "nombre": "Sebastián Pino Cárdenas"
+  },
+  {
+    "rut": "10578901-7",
+    "nombre": "Laura Meza Vera"
+  },
+  {
+    "rut": "10601234-0",
+    "nombre": "Ignacio Palma Sepúlveda"
+  },
+  {
+    "rut": "10623456-4",
+    "nombre": "Valentina Benítez Gallardo"
+  },
+  {
+    "rut": "10645678-8",
+    "nombre": "Nicolás Acosta Zamora"
+  },
+  {
+    "rut": "10667890-2",
+    "nombre": "Sofía León Lara"
+  },
+  {
+    "rut": "10689012-6",
+    "nombre": "Alejandro Ibáñez Henríquez"
+  },
+  {
+    "rut": "10712345-K",
+    "nombre": "Camila Moreno Rivas"
+  },
+  {
+    "rut": "10734567-3",
+    "nombre": "Gonzalo Paredes Alvarado"
+  },
+  {
+    "rut": "10756789-7",
+    "nombre": "Daniela Marín Figueroa"
+  },
+  {
+    "rut": "10778901-0",
+    "nombre": "Eduardo Navarrete Cáceres"
+  },
+  {
+    "rut": "10801234-4",
+    "nombre": "Francisca Astudillo Peña"
+  },
+  {
+    "rut": "10823456-8",
+    "nombre": "Mauricio Arias Olave"
+  },
+  {
+    "rut": "10845678-2",
+    "nombre": "Javiera Troncoso Villalobos"
+  },
+  {
+    "rut": "10867890-6",
+    "nombre": "Marcelo Escobar Riffo"
+  },
+  {
+    "rut": "10889012-9",
+    "nombre": "Catalina Quezada Cortez"
+  },
+  {
+    "rut": "10912345-3",
+    "nombre": "Sergio Olivares Mardones"
+  },
+  {
+    "rut": "10934567-7",
+    "nombre": "Gabriela Contreras Molina"
+  },
+  {
+    "rut": "10956789-1",
+    "nombre": "Daniel Araya Bravo"
+  },
+  {
+    "rut": "10978901-5",
+    "nombre": "Natalia Ojeda Palma"
+  },
+  {
+    "rut": "11001234-9",
+    "nombre": "Matías Sandoval Vega"
+  },
+  {
+    "rut": "11023456-K",
+    "nombre": "Bárbara Guzmán Ortiz"
+  },
+  {
+    "rut": "11045678-6",
+    "nombre": "Tomás Fuentes Miranda"
+  },
+  {
+    "rut": "11067890-0",
+    "nombre": "Marcela Pizarro Valenzuela"
+  },
+  {
+    "rut": "11089012-4",
+    "nombre": "Benjamín Aguilera Ríos"
+  },
+  {
+    "rut": "11112345-8",
+    "nombre": "Lorena Cortés Mendoza"
+  },
+  {
+    "rut": "11134567-2",
+    "nombre": "Javier Díaz Torres"
+  },
+  {
+    "rut": "11156789-6",
+    "nombre": "Paola Herrera Flores"
+  },
+  {
+    "rut": "11178901-9",
+    "nombre": "Camilo Espinoza Morales"
+  },
+  {
+    "rut": "11201234-3",
+    "nombre": "Susana Campos Vásquez"
+  },
+  {
+    "rut": "11223456-7",
+    "nombre": "Álvaro Castro Silva"
+  },
+  {
+    "rut": "11245678-1",
+    "nombre": "Alejandra Vargas Muñoz"
+  },
+  {
+    "rut": "11267890-5",
+    "nombre": "Gabriel Rojas Martínez"
+  },
+  {
+    "rut": "11289012-K",
+    "nombre": "Mónica García Reyes"
+  },
+  {
+    "rut": "11312345-2",
+    "nombre": "Patricio Soto Fernández"
+  },
+  {
+    "rut": "11334567-6",
+    "nombre": "Carla López González"
+  },
+  {
+    "rut": "11356789-0",
+    "nombre": "Hugo Rodríguez Pérez"
+  },
+  {
+    "rut": "11378901-4",
+    "nombre": "Fernanda Navarro Núñez"
+  },
+  {
+    "rut": "11401234-8",
+    "nombre": "Víctor Medina Ramos"
+  },
+  {
+    "rut": "11423456-2",
+    "nombre": "Viviana Carrasco Molina"
+  },
+  {
+    "rut": "11445678-6",
+    "nombre": "Claudio Araya Tapia"
+  },
+  {
+    "rut": "11467890-9",
+    "nombre": "Fabiola Ruiz Pino"
+  },
+  {
+    "rut": "11489012-3",
+    "nombre": "Alberto Cárdenas Meza"
+  },
+  {
+    "rut": "11512345-7",
+    "nombre": "Roxana Vera Palma"
+  },
+  {
+    "rut": "11534567-1",
+    "nombre": "Gustavo Sepúlveda Benítez"
+  },
+  {
+    "rut": "11556789-5",
+    "nombre": "Cecilia Gallardo Acosta"
+  },
+  {
+    "rut": "11578901-9",
+    "nombre": "Ernesto Zamora León"
+  },
+  {
+    "rut": "11601234-K",
+    "nombre": "Pilar Lara Ibáñez"
+  },
+  {
+    "rut": "11623456-7",
+    "nombre": "Enrique Henríquez Moreno"
+  },
+  {
+    "rut": "11645678-1",
+    "nombre": "Beatriz Rivas Paredes"
+  },
+  {
+    "rut": "11667890-5",
+    "nombre": "Ramón Alvarado Marín"
+  },
+  {
+    "rut": "11689012-9",
+    "nombre": "Constanza Figueroa Navarrete"
+  },
+  {
+    "rut": "11712345-3",
+    "nombre": "Arturo Cáceres Astudillo"
+  },
+  {
+    "rut": "11734567-7",
+    "nombre": "Renata Peña Arias"
+  },
+  {
+    "rut": "11756789-1",
+    "nombre": "Jaime Olave Troncoso"
+  },
+  {
+    "rut": "11778901-5",
+    "nombre": "Isidora Villalobos Escobar"
+  },
+  {
+    "rut": "11801234-9",
+    "nombre": "Cristóbal Riffo Quezada"
+  },
+  {
+    "rut": "11823456-K",
+    "nombre": "Josefa Cortez Olivares"
+  },
+  {
+    "rut": "11845678-6",
+    "nombre": "Omar Mardones Contreras"
+  },
+  {
+    "rut": "11867890-0",
+    "nombre": "Rocío Molina Araya"
+  },
+  {
+    "rut": "11889012-4",
+    "nombre": "Iván Bravo Cabrera"
+  },
+  {
+    "rut": "11912345-8",
+    "nombre": "Pamela Salinas Tapia"
+  },
+  {
+    "rut": "11934567-2",
+    "nombre": "Nelson Pino Cárdenas"
+  },
+  {
+    "rut": "11956789-6",
+    "nombre": "Soledad Meza Vera"
+  },
+  {
+    "rut": "11978901-9",
+    "nombre": "Marco Palma Sepúlveda"
+  },
+  {
+    "rut": "12001234-3",
+    "nombre": "Teresa Benítez Gallardo"
+  },
+  {
+    "rut": "12023456-7",
+    "nombre": "Óscar Acosta Zamora"
+  },
+  {
+    "rut": "12045678-1",
+    "nombre": "Margarita León Lara"
+  },
+  {
+    "rut": "12067890-5",
+    "nombre": "Héctor Ibáñez Henríquez"
+  },
+  {
+    "rut": "12089012-9",
+    "nombre": "Gloria Moreno Rivas"
+  },
+  {
+    "rut": "12112345-K",
+    "nombre": "Fernando Paredes Alvarado"
+  },
+  {
+    "rut": "12134567-7",
+    "nombre": "Luisa Marín Figueroa"
+  },
+  {
+    "rut": "12156789-1",
+    "nombre": "Jorge Navarrete Cáceres"
+  },
+  {
+    "rut": "12178901-5",
+    "nombre": "Alicia Astudillo Peña"
+  },
+  {
+    "rut": "12201234-9",
+    "nombre": "Antonio Arias Olave"
+  },
+  {
+    "rut": "12223456-3",
+    "nombre": "Yasna Troncoso Villalobos"
+  },
+  {
+    "rut": "12245678-7",
+    "nombre": "Esteban Escobar Riffo"
+  },
+  {
+    "rut": "12267890-1",
+    "nombre": "Karina Quezada Cortez"
+  },
+  {
+    "rut": "12289012-5",
+    "nombre": "Raúl Olivares Mardones"
+  },
+  {
+    "rut": "12312345-9",
+    "nombre": "Ximena Contreras Molina"
+  },
+  {
+    "rut": "12334567-K",
+    "nombre": "Cristián Araya Bravo"
+  },
+  {
+    "rut": "12356789-7",
+    "nombre": "Angélica Ojeda Palma"
+  },
+  {
+    "rut": "12378901-1",
+    "nombre": "Patricio Sandoval Vega"
+  },
+  {
+    "rut": "12401234-5",
+    "nombre": "Miriam Guzmán Ortiz"
+  },
+  {
+    "rut": "12423456-9",
+    "nombre": "Rodrigo Fuentes Miranda"
+  },
+  {
+    "rut": "12445678-3",
+    "nombre": "Tatiana Pizarro Valenzuela"
+  },
+  {
+    "rut": "12467890-7",
+    "nombre": "Mauricio Aguilera Ríos"
+  },
+  {
+    "rut": "12489012-1",
+    "nombre": "Liliana Cortés Mendoza"
+  },
+  {
+    "rut": "12512345-5",
+    "nombre": "Eduardo Díaz Torres"
+  },
+  {
+    "rut": "12534567-9",
+    "nombre": "Verena Herrera Flores"
+  },
+  {
+    "rut": "12556789-K",
+    "nombre": "Carlos Espinoza Morales"
+  },
+  {
+    "rut": "12578901-7",
+    "nombre": "Andrea Campos Vásquez"
+  },
+  {
+    "rut": "12601234-1",
+    "nombre": "Leonardo Castro Silva"
+  },
+  {
+    "rut": "12623456-5",
+    "nombre": "Rebeca Vargas Muñoz"
+  },
+  {
+    "rut": "12645678-9",
+    "nombre": "Marcelo Rojas Martínez"
+  },
+  {
+    "rut": "12667890-3",
+    "nombre": "Nicole García Reyes"
+  },
+  {
+    "rut": "12689012-7",
+    "nombre": "Wladimir Soto Fernández"
+  },
+  {
+    "rut": "12712345-1",
+    "nombre": "Paz López González"
+  },
+  {
+    "rut": "12734567-5",
+    "nombre": "Claudio Rodríguez Pérez"
+  },
+  {
+    "rut": "12756789-9",
+    "nombre": "Ángela Navarro Núñez"
+  },
+  {
+    "rut": "12778901-K",
+    "nombre": "Rodrigo Medina Ramos"
+  },
+  {
+    "rut": "12801234-7",
+    "nombre": "Francisca Carrasco Molina"
+  },
+  {
+    "rut": "12823456-1",
+    "nombre": "Andrés Araya Tapia"
+  },
+  {
+    "rut": "12845678-5",
+    "nombre": "Carolina Ruiz Pino"
+  },
+  {
+    "rut": "12867890-9",
+    "nombre": "Boris Cárdenas Meza"
+  },
+  {
+    "rut": "12889012-K",
+    "nombre": "Diana Vera Palma"
+  },
+  {
+    "rut": "12912345-7",
+    "nombre": "Cristóbal Sepúlveda Benítez"
+  },
+  {
+    "rut": "12934567-1",
+    "nombre": "Elisa Gallardo Acosta"
+  },
+  {
+    "rut": "12956789-5",
+    "nombre": "Mario Zamora León"
+  },
+  {
+    "rut": "12978901-9",
+    "nombre": "Valentina Lara Ibáñez"
+  },
+  {
+    "rut": "13001234-K",
+    "nombre": "Felipe Henríquez Moreno"
+  },
+  {
+    "rut": "13023456-7",
+    "nombre": "María José Rivas Paredes"
+  },
+  {
+    "rut": "13045678-1",
+    "nombre": "Juan Pablo Alvarado Marín"
+  },
+  {
+    "rut": "13067890-5",
+    "nombre": "Catalina Figueroa Navarrete"
+  },
+  {
+    "rut": "13089012-9",
+    "nombre": "Diego Cáceres Astudillo"
+  },
+  {
+    "rut": "13112345-3",
+    "nombre": "Camila Peña Arias"
+  },
+  {
+    "rut": "13134567-7",
+    "nombre": "Sebastián Olave Troncoso"
+  },
+  {
+    "rut": "13156789-1",
+    "nombre": "Daniela Villalobos Escobar"
+  },
+  {
+    "rut": "13178901-5",
+    "nombre": "Ignacio Riffo Quezada"
+  },
+  {
+    "rut": "13201234-9",
+    "nombre": "Sofía Cortez Olivares"
+  },
+  {
+    "rut": "13223456-K",
+    "nombre": "Matías Mardones Contreras"
+  },
+  {
+    "rut": "13245678-7",
+    "nombre": "Javiera Molina Araya"
+  },
+  {
+    "rut": "13267890-1",
+    "nombre": "Tomás Bravo Cabrera"
+  },
+  {
+    "rut": "13289012-5",
+    "nombre": "Josefa Salinas Tapia"
+  },
+  {
+    "rut": "13312345-9",
+    "nombre": "Benjamín Pino Cárdenas"
+  },
+  {
+    "rut": "13334567-3",
+    "nombre": "Isidora Meza Vera"
+  },
+  {
+    "rut": "13356789-7",
+    "nombre": "Javier Palma Sepúlveda"
+  },
+  {
+    "rut": "13378901-1",
+    "nombre": "Renata Benítez Gallardo"
+  },
+  {
+    "rut": "13401234-5",
+    "nombre": "Nicolás Acosta Zamora"
+  },
+  {
+    "rut": "13423456-9",
+    "nombre": "Constanza León Lara"
+  },
+  {
+    "rut": "13445678-K",
+    "nombre": "Alejandro Ibáñez Henríquez"
+  },
+  {
+    "rut": "13467890-7",
+    "nombre": "Pilar Moreno Rivas"
+  },
+  {
+    "rut": "13489012-1",
+    "nombre": "Gonzalo Paredes Alvarado"
+  },
+  {
+    "rut": "13512345-5",
+    "nombre": "Lorena Marín Figueroa"
+  },
+  {
+    "rut": "13534567-9",
+    "nombre": "Pablo Navarrete Cáceres"
+  },
+  {
+    "rut": "13556789-3",
+    "nombre": "Fabiola Astudillo Peña"
+  },
+  {
+    "rut": "13578901-7",
+    "nombre": "Ricardo Arias Olave"
+  },
+  {
+    "rut": "13601234-1",
+    "nombre": "Roxana Troncoso Villalobos"
+  },
+  {
+    "rut": "13623456-5",
+    "nombre": "Alberto Escobar Riffo"
+  },
+  {
+    "rut": "13645678-9",
+    "nombre": "Ximena Quezada Cortez"
+  },
+  {
+    "rut": "13667890-K",
+    "nombre": "Gustavo Olivares Mardones"
+  },
+  {
+    "rut": "13689012-7",
+    "nombre": "Cecilia Contreras Molina"
+  },
+  {
+    "rut": "13712345-1",
+    "nombre": "Ernesto Araya Bravo"
+  },
+  {
+    "rut": "13734567-5",
+    "nombre": "Beatriz Ojeda Palma"
+  },
+  {
+    "rut": "13756789-9",
+    "nombre": "Raúl Sandoval Vega"
+  },
+  {
+    "rut": "13778901-3",
+    "nombre": "Margarita Guzmán Ortiz"
+  },
+  {
+    "rut": "13801234-7",
+    "nombre": "Enrique Fuentes Miranda"
+  },
+  {
+    "rut": "13823456-1",
+    "nombre": "Alicia Pizarro Valenzuela"
+  },
+  {
+    "rut": "13845678-5",
+    "nombre": "Héctor Aguilera Ríos"
+  },
+  {
+    "rut": "13867890-9",
+    "nombre": "Gloria Cortés Mendoza"
+  },
+  {
+    "rut": "13889012-K",
+    "nombre": "Jorge Díaz Torres"
+  },
+  {
+    "rut": "13912345-7",
+    "nombre": "Luisa Herrera Flores"
+  },
+  {
+    "rut": "13934567-1",
+    "nombre": "Antonio Espinoza Morales"
+  },
+  {
+    "rut": "13956789-5",
+    "nombre": "Teresa Campos Vásquez"
+  },
+  {
+    "rut": "13978901-9",
+    "nombre": "Fernando Castro Silva"
+  },
+  {
+    "rut": "14001234-3",
+    "nombre": "Miriam Vargas Muñoz"
+  },
+  {
+    "rut": "14023456-7",
+    "nombre": "Omar Rojas Martínez"
+  },
+  {
+    "rut": "14045678-1",
+    "nombre": "Yasna García Reyes"
+  },
+  {
+    "rut": "14067890-5",
+    "nombre": "Iván Soto Fernández"
+  },
+  {
+    "rut": "14089012-9",
+    "nombre": "Karina López González"
+  },
+  {
+    "rut": "14112345-K",
+    "nombre": "Nelson Rodríguez Pérez"
+  },
+  {
+    "rut": "14134567-7",
+    "nombre": "Angélica Navarro Núñez"
+  },
+  {
+    "rut": "14156789-1",
+    "nombre": "Marco Medina Ramos"
+  },
+  {
+    "rut": "14178901-5",
+    "nombre": "Tatiana Carrasco Molina"
+  },
+  {
+    "rut": "14201234-9",
+    "nombre": "Óscar Araya Tapia"
+  },
+  {
+    "rut": "14223456-K",
+    "nombre": "Mirna Ruiz Pino"
+  },
+  {
+    "rut": "14245678-6",
+    "nombre": "Wladimir Cárdenas Meza"
+  },
+  {
+    "rut": "14267890-0",
+    "nombre": "Liliana Vera Palma"
+  },
+  {
+    "rut": "14289012-4",
+    "nombre": "Cristián Sepúlveda Benítez"
+  },
+  {
+    "rut": "14312345-8",
+    "nombre": "Rebeca Gallardo Acosta"
+  },
+  {
+    "rut": "14334567-2",
+    "nombre": "Leonardo Zamora León"
+  },
+  {
+    "rut": "14356789-6",
+    "nombre": "Nicole Lara Ibáñez"
+  },
+  {
+    "rut": "14378901-9",
+    "nombre": "Boris Henríquez Moreno"
+  },
+  {
+    "rut": "14401234-3",
+    "nombre": "Diana Rivas Paredes"
+  },
+  {
+    "rut": "14423456-7",
+    "nombre": "Patricio Alvarado Marín"
+  },
+  {
+    "rut": "16155479-0",
+    "nombre": "Juan Maurelia"
+  },
+  {
+    "rut": "14445678-1",
+    "nombre": "Elisa Figueroa Navarrete"
+  },
+  {
+    "rut": "14467890-5",
+    "nombre": "Mario Cáceres Astudillo"
+  },
+  {
+    "rut": "14489012-9",
+    "nombre": "Verena Peña Arias"
+  },
+  {
+    "rut": "14512345-K",
+    "nombre": "Carlos Olave Troncoso"
+  },
+  {
+    "rut": "14534567-7",
+    "nombre": "Andrea Villalobos Escobar"
+  },
+  {
+    "rut": "14556789-1",
+    "nombre": "Juan Carlos González Pérez"
+  },
+  {
+    "rut": "14578901-5",
+    "nombre": "María Fernanda Soto Castro"
+  },
+  {
+    "rut": "14601234-9",
+    "nombre": "Luis Alberto Silva Vargas"
+  },
+  {
+    "rut": "14623456-3",
+    "nombre": "Ana María Muñoz Rojas"
+  },
+  {
+    "rut": "14645678-7",
+    "nombre": "Francisco Javier Martínez García"
+  },
+  {
+    "rut": "14667890-1",
+    "nombre": "Paula Andrea Reyes Díaz"
+  },
+  {
+    "rut": "14689012-5",
+    "nombre": "José Miguel Torres Herrera"
+  },
+  {
+    "rut": "14712345-9",
+    "nombre": "Sandra Patricia Flores Espinoza"
+  },
+  {
+    "rut": "14734567-K",
+    "nombre": "Pedro Andrés Morales Campos"
+  },
+  {
+    "rut": "14756789-6",
+    "nombre": "Claudia Andrea Vásquez Guzmán"
+  },
+  {
+    "rut": "14778901-0",
+    "nombre": "Andrés Felipe Ortiz Navarro"
+  },
+  {
+    "rut": "14801234-4",
+    "nombre": "Carolina Isabel Núñez Fuentes"
+  },
+  {
+    "rut": "14823456-8",
+    "nombre": "Ricardo Antonio Miranda Pizarro"
+  },
+  {
+    "rut": "14845678-2",
+    "nombre": "Verónica Carmen Valenzuela Aguilera"
+  },
+  {
+    "rut": "14867890-6",
+    "nombre": "Roberto Carlos Ríos Cortés"
+  },
+  {
+    "rut": "14889012-9",
+    "nombre": "Patricia Elena Mendoza Sandoval"
+  },
+  {
+    "rut": "14912345-3",
+    "nombre": "Pablo Ignacio Vega Jiménez"
+  },
+  {
+    "rut": "14934567-7",
+    "nombre": "Isabel Rosa Hidalgo Medina"
+  },
+  {
+    "rut": "14956789-1",
+    "nombre": "Rodrigo Esteban Ramos Carrasco"
+  },
+  {
+    "rut": "14978901-5",
+    "nombre": "Carmen Gloria Molina Araya"
+  },
+  {
+    "rut": "15001234-9",
+    "nombre": "Diego Alejandro Bravo Ojeda"
+  },
+  {
+    "rut": "15023456-K",
+    "nombre": "Rosa Elena Cabrera Salinas"
+  },
+  {
+    "rut": "15045678-6",
+    "nombre": "Felipe Hernán Tapia Ruiz"
+  },
+  {
+    "rut": "15067890-0",
+    "nombre": "Elena Paz Pino Cárdenas"
+  },
+  {
+    "rut": "15089012-4",
+    "nombre": "Sebastián Camilo Meza Vera"
+  },
+  {
+    "rut": "15112345-8",
+    "nombre": "Laura Soledad Palma Sepúlveda"
+  },
+  {
+    "rut": "15134567-2",
+    "nombre": "Ignacio Mauricio Benítez Gallardo"
+  },
+  {
+    "rut": "15156789-6",
+    "nombre": "Valentina Paz Acosta Zamora"
+  },
+  {
+    "rut": "15178901-9",
+    "nombre": "Nicolás Eduardo León Lara"
+  },
+  {
+    "rut": "15201234-3",
+    "nombre": "Sofía Lorena Ibáñez Henríquez"
+  },
+  {
+    "rut": "15223456-7",
+    "nombre": "Alejandro Rodrigo Moreno Rivas"
+  },
+  {
+    "rut": "15245678-1",
+    "nombre": "Camila Ximena Paredes Alvarado"
+  },
+  {
+    "rut": "15267890-5",
+    "nombre": "Gonzalo Patricio Marín Figueroa"
+  },
+  {
+    "rut": "15289012-9",
+    "nombre": "Daniela Nicole Navarrete Cáceres"
+  },
+  {
+    "rut": "15312345-K",
+    "nombre": "Eduardo Marcelo Astudillo Peña"
+  },
+  {
+    "rut": "15334567-7",
+    "nombre": "Francisca Belén Arias Olave"
+  },
+  {
+    "rut": "15356789-1",
+    "nombre": "Mauricio Andrés Troncoso Villalobos"
+  },
+  {
+    "rut": "15378901-5",
+    "nombre": "Javiera Catalina Escobar Riffo"
+  },
+  {
+    "rut": "15401234-9",
+    "nombre": "Marcelo Sergio Quezada Cortez"
+  },
+  {
+    "rut": "15423456-3",
+    "nombre": "Catalina Paz Olivares Mardones"
+  },
+  {
+    "rut": "15445678-7",
+    "nombre": "Sergio Hernán Contreras Molina"
+  },
+  {
+    "rut": "15467890-1",
+    "nombre": "Gabriela Vanessa Araya Bravo"
+  },
+  {
+    "rut": "15489012-5",
+    "nombre": "Daniel Rodrigo Ojeda Palma"
+  },
+  {
+    "rut": "15512345-9",
+    "nombre": "Natalia Alejandra Sandoval Vega"
+  },
+  {
+    "rut": "15534567-K",
+    "nombre": "Matías Ignacio Guzmán Ortiz"
+  }
 ]
