@@ -10,10 +10,14 @@
       Resetear BD
     </v-btn>
   </div>
+
+  <p class="text-caption text-grey text-center mt-6">v{{ VERSION }}</p>
 </template>
 
 <script setup>
 import { db } from "@/db.js";
+
+const VERSION = '1.0.0'
 import SincronizarPersonas from "@/components/SincronizarPersonas.vue";
 import DescargarCSV from "@/components/DescargarCSV.vue";
 
